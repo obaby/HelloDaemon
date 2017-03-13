@@ -115,6 +115,10 @@ public class IntentWrapper {
             Intent oppoIntent = new Intent();
             oppoIntent.setComponent(new ComponentName("com.coloros.safecenter", "com.coloros.safecenter.permission.startup.StartupAppListActivity"));
             sIntentWrapperList.add(new IntentWrapper(oppoIntent, OPPO));
+            
+            Intent colorIntent = new Intent();
+            colorIntent.setComponent(new ComponentName("com.color.safecenter", "com.color.safecenter.permission.startup.StartupAppListActivity"));
+            INTENT_WRAPPER_LIST.add(new IntentWrapper(colorIntent, OPPO));
 
             //Vivo 后台高耗电
             Intent vivoGodIntent = new Intent();
